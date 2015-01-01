@@ -7,6 +7,11 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
+## Download
+The latest release is [v1.0.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.0.0) (12-31-2014).
+
+The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
+
 ## Applications
 
 You get both all the original files from [go1.4.windows-amd64.zip](http://golang.org/dl/) and [msysGit](https://msysgit.github.io/). No changes have been made to any of the files, just extracted to separate folders.
@@ -33,7 +38,7 @@ _Vet.cmd				- Examines code and reports suspicious constructs
 
 ## Boilerplate Version and Build Date
 
-One feature I find really useful is the ability to set uninitialized variables at build time using [ldflags](http://stackoverflow.com/questions/11354518/golang-application-auto-build-versioning).
+One feature I find really useful is the ability to set uninitialized variables at build time using [ldflags](http://stackoverflow.com/questions/11354518/golang-application-auto-build-versioning) for build version and date.
 
 The BuildDate variable is automatically set in \workspace\__Global.cmd to: YYYYMMDDHHMMSSMM
 The Version variable is set in: \workspace\BuildVersion.txt
@@ -47,16 +52,4 @@ All the boilerplate code is already included in \workspace\src\start\start.go.
 
 ## Boilerplate Tests
 
-A boilerplate test package is also included at \workspace\src\start\start_test.go. The only test not included is Benchmark.
-
-## Release History
-
-v1.0.0 (2014-12-31)
--------------------
-* Added Go v1.4 AMD64 (Programming Language) (2014/12/10)
-* Added msysGit Net Install v1.9.4 (Version Control System) (2014/09/29 Preview)
-* Added one-click use of go build, go clean, godoc, go tool fix, go install, golint, go list, go test, and go vet
-* Added main package and main_test package
-* Added code for Version and BuildDate flags
-* Added formatting help for documentation in main package
-* Added sample tests for main_test package
+A boilerplate test package is also included at \workspace\src\start\start_test.go. The only test type not included is Benchmark.
