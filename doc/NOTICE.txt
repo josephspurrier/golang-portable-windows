@@ -1,0 +1,10 @@
+Copyright 2014 Joseph Spurrier
+
+This product includes software developed by
+the Joseph Spurrier (http://www.josephspurrier.com).
+
+This product includes software developed by
+The Go Authors (https://golang.org).
+
+This product includes software developed by
+Git for Windows (http://msysgit.github.io).
