@@ -17,18 +17,18 @@ The scripts in \workspace make it easy to interact with the standard Go tools. A
 
 ```
 __Command Prompt.cmd	- Opens a command prompt
-__Global.cmd		- Called by all the scripts to set the environment variables and paths
-_Build.cmd		- Builds all apps with a main() function in respective directories, sets Version and BuildDate inside app
+__Global.cmd			- Called by all the scripts to set the environment variables and paths
+_Build.cmd				- Builds all apps with a main() function in respective directories, sets Version and BuildDate inside app
 _BuildRaceDetector.cmd	- Same as _Build.cmd, but includes -race flag which detects race conditions (size of .exe is greatly increased, not for Production)
-_Clean.cmd		- Removes object files from package source directories and corresponding binary
-_Document.cmd		- Runs web server and opens a browser to a local version of the documentation for the application
-_Fix.cmd		- Finds lines of code that use old APIs and shows diffs to use newer APIs
-_Install.cmd		- Installs the packages in the /bin directory (will create automatically)
-_Lint.cmd		- Installs Lint and then prints out style mistakes
-_List.cmd		- Outputs all the packages
-_Test.cmd		- Runs all package tests and outputs code coverage as well as any race conditions
-_TestCoverage.cmd	- Same as _Test.cmd, but then opens a web browser to a local version of the code coverage map
-_Vet.cmd		- Examines code and reports suspicious constructs
+_Clean.cmd				- Removes object files from package source directories and corresponding binary
+_Document.cmd			- Runs web server and opens a browser to a local version of the documentation for the application
+_Fix.cmd				- Finds lines of code that use old APIs and shows diffs to use newer APIs
+_Install.cmd			- Installs the packages in the /bin directory (will create automatically)
+_Lint.cmd				- Installs Lint and then prints out style mistakes
+_List.cmd				- Outputs all the packages
+_Test.cmd				- Runs all package tests and outputs code coverage as well as any race conditions
+_TestCoverage.cmd		- Same as _Test.cmd, but then opens a web browser to a local version of the code coverage map
+_Vet.cmd				- Examines code and reports suspicious constructs
 ```
 
 ## Boilerplate Version and Build Date
