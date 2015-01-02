@@ -20,12 +20,16 @@ This project is pretty much a turnkey solution that will not be suitable for eve
 
 When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
 
-I understand building a go program is simple: go build {package}
+I understand building a go program is simple:
+```
+go build {package}
+```
 
 But there are tasks that require much more typing like generating an HTML coverage map and then displaying in your web browser.
-
+```
 go test -coverprofile="%GOPATH%\test.tmp" -race -cover {package}
 go tool cover -html="%GOPATH%\test.tmp"
+```
 
 As developers, we automate as much as possible - at least we should. I believe that if you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you're wasting your time.
 
