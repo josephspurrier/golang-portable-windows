@@ -1,7 +1,13 @@
+v1.1.0 (2015-01-02)
+-------------------
+* Added _Get.cmd
+* Added GetPackages.txt
+* Updated scripts with unused variables
+
 v1.0.0 (2014-12-31)
 -------------------
-* Added Go v1.4 AMD64 (Programming Language) (2014/12/10)
-* Added msysGit Net Install v1.9.4 (Version Control System) (2014/09/29 Preview)
+* Added Go v1.4 AMD64 (Programming Language) (2014-12-10)
+* Added msysGit Net Install v1.9.4 (Version Control System) (2014-09-29 Preview)
 * Added one-click use of go build, go clean, godoc, go tool fix, go install, golint, go list, go test, and go vet
 * Added main package and main_test package
 * Added code for Version and BuildDate flags
