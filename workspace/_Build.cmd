@@ -4,15 +4,13 @@ Setlocal EnableDelayedExpansion
 CALL __Global.cmd
 
 ECHO *** Gobuild ***
-ECHO Build compiles packages and dependencies without race condition detector
+ECHO Build compiles packages and dependencies
 ECHO.
 
 go list ./... > "%GOPATH%\packages.txt"
 
-for /F "tokens=*" %%A in (packages.txt) do (
-set PACKAGE=%%A
-
-SET FIRST=!PACKAGE:~0,1!
+FOR /F "tokens=*" %%A IN (packages.txt) DO (
+SET PACKAGE=%%A
 
 ECHO Building: !PACKAGE!
 cd "%GOPATH%\src\!PACKAGE!"

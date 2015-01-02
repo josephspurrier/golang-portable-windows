@@ -8,7 +8,7 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.0.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.0.0) (12-31-2014).
+The latest release is [v1.1.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.1.0) (2014-01-02).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
 
@@ -28,6 +28,7 @@ _BuildRaceDetector.cmd	- Same as _Build.cmd, but includes -race flag which detec
 _Clean.cmd				- Removes object files from package source directories and corresponding binary
 _Document.cmd			- Runs web server and opens a browser to a local version of the documentation for the application
 _Fix.cmd				- Finds lines of code that use old APIs and shows diffs to use newer APIs
+_Get.cmd				- Downloads and installs the packages named by the import paths
 _Install.cmd			- Installs the packages in the /bin directory (will create automatically)
 _Lint.cmd				- Installs Lint and then prints out style mistakes
 _List.cmd				- Outputs all the packages
@@ -35,6 +36,8 @@ _Test.cmd				- Runs all package tests and outputs code coverage as well as any r
 _TestCoverage.cmd		- Same as _Test.cmd, but then opens a web browser to a local version of the code coverage map
 _Vet.cmd				- Examines code and reports suspicious constructs
 ```
+## How to Use _Get.cmd
+To download packages, write each package on a separate line in \workspace\BuildVersion.txt and then run _Get.cmd.
 
 ## Boilerplate Version and Build Date
 

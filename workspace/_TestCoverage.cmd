@@ -14,10 +14,8 @@ ECHO.
 
 go list ./... > "%GOPATH%\packages.txt"
 
-for /F "tokens=*" %%A in (packages.txt) do (
-set PACKAGE=%%A
-
-SET FIRST=!PACKAGE:~0,1!
+FOR /F "tokens=*" %%A IN (packages.txt) DO (
+SET PACKAGE=%%A
 
 IF "!FIRST!" == "_" (
 ECHO Skipping: !PACKAGE!
