@@ -35,7 +35,7 @@ As developers, we automate as much as possible - at least we should. I believe t
 
 Just double click any of the scripts and the commands will run. You don't have to specify the package or files - it will use the built in command "go list" to automatically build, test, format, clean, fix, or lint all the files in your workspace.
 
-From an ease of use standpoint, if you sat down at your friends computer, to get go up and running:
+From an ease of use standpoint, if you sat down at your friends computer, to get Go up and running:
 
 * Download the latest zip release of my project
 * Extract to a folder
