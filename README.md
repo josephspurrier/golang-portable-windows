@@ -3,6 +3,8 @@ golang-portable-windows
 
 Go Programming Language - Portable Environment for Windows
 
+This project is helpful for someone that wants to test Go on Windows within 30 seconds.
+
 Very simply: a Go workspace with all the batch scripts needed to format, build, and test Go programs at extract - no install necessary.
 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
@@ -11,6 +13,32 @@ This distribution is a portable workspace with boilerplate Go code as well as a 
 The latest release is [v1.1.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.1.0) (2014-01-02).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
+
+## Overview
+
+This project is pretty much a turnkey solution that will not be suitable for everyone. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
+
+When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
+
+I understand building a go program is simple: go build {package}
+
+But there are tasks that require much more typing like generating an HTML coverage map and then displaying in your web browser.
+
+go test -coverprofile="%GOPATH%\test.tmp" -race -cover {package}
+go tool cover -html="%GOPATH%\test.tmp"
+
+As developers, we automate as much as possible - at least we should. I believe that if you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you're wasting your time.
+
+Just double click any of the scripts and the commands will run. You don't have to specify the package or files - it will use the built in command "go list" to automatically build, test, format, clean, fix, or lint all the files in your workspace.
+
+From an ease of use standpoint, if you sat down at your friends computer, to get go up and running:
+
+* Download the latest zip release of my project
+* Extract to a folder
+* Double click \workspace\_Build.com
+* You can now run \workspace\src\start\start.exe
+
+It's that simple.
 
 ## Applications
 
