@@ -77,6 +77,7 @@ To download packages, write each package on a separate line in \workspace\GetPac
 One feature I find really useful is the ability to set uninitialized variables at build time using [ldflags](http://stackoverflow.com/questions/11354518/golang-application-auto-build-versioning) for build version and date.
 
 The BuildDate variable is automatically set in \workspace\__Global.cmd to: YYYYMMDDHHMMSSMM
+
 The Version variable is set in: \workspace\BuildVersion.txt
 
 The LDFLAGS variable is set in \workspace\__Global.cmd and then used by the scripts:
