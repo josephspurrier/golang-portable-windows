@@ -16,7 +16,7 @@ The repository does not contain any binaries. Be sure to download the latest rel
 
 ## Overview
 
-This project is a turnkey solution go building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
+This project is a turnkey solution for building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
 
 When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
 
