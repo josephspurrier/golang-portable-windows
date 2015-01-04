@@ -27,6 +27,13 @@ func TestOutput(t *testing.T) {
 	assertEqual("Hello", val)
 }
 
+// Benchmark test
+func BenchmarkHello10(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		fmt.Println("Hello")
+	}
+}
+
 // Race condition test
 func TestGo(t *testing.T) {
 	go fmt.Println("Hello")
