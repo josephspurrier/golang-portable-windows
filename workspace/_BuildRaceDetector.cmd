@@ -17,10 +17,10 @@ cd "%GOPATH%\src\!PACKAGE!"
 go build -v -race %LDFLAGS% !PACKAGE!
 ECHO.
 
+IF !ERRORLEVEL! NEQ 0 PAUSE
+
 )
 
 ECHO *** Cleaning Up ***
 DEL /F /Q "%GOPATH%\packages.txt"
 ECHO.
-
-PAUSE
