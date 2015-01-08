@@ -39,7 +39,7 @@ From an ease of use standpoint, if you sat down at your friends computer, to get
 
 * Download the latest zip release of my project
 * Extract to a folder
-* Double click \workspace\\_Build.com
+* Double click \workspace\\_Build.cmd
 * You can now run the Hello demo app: \workspace\src\start\start.exe
 
 It's that simple.
