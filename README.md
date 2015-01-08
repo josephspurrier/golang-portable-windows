@@ -39,7 +39,7 @@ From an ease of use standpoint, if you sat down at your friends computer, to get
 
 * Download the latest zip release of my project
 * Extract to a folder
-* Double click \workspace\_Build.com
+* Double click \workspace\\_Build.com
 * You can now run the Hello demo app: \workspace\src\start\start.exe
 
 It's that simple.
@@ -76,11 +76,11 @@ To download packages, write each package on a separate line in \workspace\GetPac
 
 One feature I find really useful is the ability to set uninitialized variables at build time using [ldflags](http://stackoverflow.com/questions/11354518/golang-application-auto-build-versioning) for build version and date.
 
-The BuildDate variable is automatically set in \workspace\__Global.cmd to: YYYYMMDDHHMMSSMM
+The BuildDate variable is automatically set in \workspace\\__Global.cmd to: YYYYMMDDHHMMSSMM
 
 The Version variable is set in: \workspace\BuildVersion.txt
 
-The LDFLAGS variable is set in \workspace\__Global.cmd and then used by the scripts:
+The LDFLAGS variable is set in \workspace\\__Global.cmd and then used by the scripts:
 * _Build.cmd
 * _BuildRaceDetector.cmd
 * _Install.cmd 
