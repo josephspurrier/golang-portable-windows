@@ -10,7 +10,7 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.2.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.2.0) (2014-01-04).
+The latest release is [v1.3.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.3.0) (2014-01-16).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
 
