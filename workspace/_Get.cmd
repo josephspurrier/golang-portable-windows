@@ -14,6 +14,6 @@ ECHO Getting: !PACKAGE!
 go get !PACKAGE!
 ECHO.
 
-IF !ERRORLEVEL! NEQ 0 PAUSE
-
 )
+
+PAUSE
