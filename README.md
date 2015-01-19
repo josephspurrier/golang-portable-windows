@@ -10,17 +10,17 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.1.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.1.0) (2014-01-02).
+The latest release is [v1.2.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.2.0) (2014-01-04).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
 
 ## Overview
 
-This project is pretty much a turnkey solution that will not be suitable for everyone. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
+This project is a turnkey solution go building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
 
 When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
 
-I understand building a go program is simple:
+Building a Go program is simple:
 ```
 go build {package}
 ```
@@ -31,9 +31,9 @@ go test -coverprofile="%GOPATH%\test.tmp" -race -cover {package}
 go tool cover -html="%GOPATH%\test.tmp"
 ```
 
-As developers, we automate as much as possible - at least we should. I believe that if you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you're wasting your time.
+If you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you are wasting time.
 
-Just double click any of the scripts and the commands will run. You don't have to specify the package or files - it will use the built in command "go list" to automatically build, test, format, clean, fix, or lint all the files in your workspace.
+Just double click any of the scripts and the correct Go commands will run. You don't have to specify the package or files - it will use the built in command "go list" to automatically build, test, format, clean, fix, or lint all the files in your workspace.
 
 From an ease of use standpoint, if you sat down at your friends computer, to get Go up and running:
 
@@ -65,11 +65,12 @@ _Install.cmd			- Installs the packages in the /bin directory (will create automa
 _Lint.cmd				- Installs Lint and then prints out style mistakes
 _List.cmd				- Outputs all the packages
 _Test.cmd				- Runs all package tests and outputs code coverage as well as any race conditions
+_TestBenchmark.cmd		- Runs all package tests and outputs all benchmarks
 _TestCoverage.cmd		- Same as _Test.cmd, but then opens a web browser to a local version of the code coverage map
 _Vet.cmd				- Examines code and reports suspicious constructs
 ```
 ## How to Use _Get.cmd
-To download packages, write each package on a separate line in \workspace\BuildVersion.txt and then run _Get.cmd.
+To download packages, write each package on a separate line in \workspace\GetPackages.txt and then run _Get.cmd.
 
 ## Boilerplate Version and Build Date
 
@@ -87,4 +88,4 @@ All the boilerplate code is already included in \workspace\src\start\start.go.
 
 ## Boilerplate Tests
 
-A boilerplate test package is also included at \workspace\src\start\start_test.go. The only test type not included is Benchmark.
+A boilerplate test package is also included at \workspace\src\start\start_test.go.
