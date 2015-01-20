@@ -3,16 +3,15 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Gotest ***
-ECHO Test runs package tests
+ECHO *** Gofmt ***
+ECHO Gofmt formats Go programs
 ECHO.
 
 FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
 
-ECHO Testing: !PACKAGE!
-cd "%GOPATH%\src\!PACKAGE!"
-go test !PACKAGE! -race -bench=.
+ECHO Formatting: !PACKAGE!
+gofmt -s -w "%GOPATH%\src\!PACKAGE!"
 ECHO.
 
 )

@@ -10,7 +10,7 @@ FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
 
 ECHO Fixing: !PACKAGE!
-go tool fix "%GOPATH%\src\!PACKAGE!"
+go tool fix -diff "%GOPATH%\src\!PACKAGE!"
 ECHO.
 
 )

@@ -1,4 +1,5 @@
 @ECHO OFF
+Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
