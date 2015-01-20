@@ -7,9 +7,7 @@ ECHO *** Gobuild ***
 ECHO Build compiles packages and dependencies
 ECHO.
 
-go list ./... > "%GOPATH%\packages.txt"
-
-FOR /F "tokens=*" %%A IN (packages.txt) DO (
+FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
 
 ECHO Building: !PACKAGE!
@@ -20,7 +18,3 @@ ECHO.
 IF !ERRORLEVEL! NEQ 0 PAUSE
 
 )
-
-ECHO *** Cleaning Up ***
-DEL /F /Q "%GOPATH%\packages.txt"
-ECHO.

@@ -12,9 +12,7 @@ ECHO *** Gotest ***
 ECHO Test runs package tests
 ECHO.
 
-go list ./... > "%GOPATH%\packages.txt"
-
-FOR /F "tokens=*" %%A IN (packages.txt) DO (
+FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
 
 IF "!FIRST!" == "_" (
@@ -39,9 +37,5 @@ ECHO.
 
 )
 )
-
-ECHO *** Cleaning Up ***
-DEL /F /Q "%GOPATH%\packages.txt"
-ECHO.
 
 PAUSE

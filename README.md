@@ -10,7 +10,7 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.3.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.3.0) (2014-01-16).
+The latest release is [v1.4.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.4.0) (2014-01-19).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
 
@@ -33,7 +33,7 @@ go tool cover -html="%GOPATH%\test.tmp"
 
 If you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you are wasting time.
 
-Just double click any of the scripts and the correct Go commands will run. You don't have to specify the package or files - it will use the built in command "go list" to automatically build, test, format, clean, fix, or lint all the files in your workspace.
+Just double click any of the scripts and the correct Go commands will run. Specify your package name (or names, each on a separate line) in Packages.txt and the scripts will build, test, format, clean, fix, or lint all the files in that package.
 
 From an ease of use standpoint, if you sat down at your friends computer, to get Go up and running:
 
@@ -46,7 +46,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.windows-amd64.zip](http://golang.org/dl/) and [msysGit](https://msysgit.github.io/). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/) and [msysGit](https://msysgit.github.io/). No changes have been made to any of the files, just extracted to separate folders.
 
 ## Batch Scripts
 

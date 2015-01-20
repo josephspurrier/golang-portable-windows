@@ -1,12 +1,18 @@
 @ECHO OFF
-
+Setlocal EnableDelayedExpansion
 CALL __Global.cmd
 
 ECHO *** Gofix ***
 ECHO Fix finds Go programs that use old APIs and rewrites them to use newer ones
 ECHO.
 
-go tool fix -diff "%GOPATH%"
+FOR /F "tokens=*" %%A IN (Packages.txt) DO (
+SET PACKAGE=%%A
+
+ECHO Fixing: !PACKAGE!
+go tool fix -diff "%GOPATH%\src\!PACKAGE!"
 ECHO.
+
+)
 
 PAUSE

@@ -1,3 +1,16 @@
+v1.4.0 (2015-01-19)
+-------------------
+* Updated scripts to use Packages.txt instead of the go list command for faster building
+
+v1.3.0 (2015-01-16)
+-------------------
+* Updated to Go v1.4.1 AMD64
+
+v1.2.0 (2015-01-04)
+-------------------
+* Updated a few scripts to only PAUSE on errors
+* Added benchmark script and boilerplate code
+
 v1.1.0 (2015-01-02)
 -------------------
 * Added _Get.cmd
