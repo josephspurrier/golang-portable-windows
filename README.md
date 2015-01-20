@@ -10,13 +10,13 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.2.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.2.0) (2014-01-04).
+The latest release is [v1.3.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.3.0) (2014-01-16).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
 
 ## Overview
 
-This project is a turnkey solution go building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
+This project is a turnkey solution for building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
 
 When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
 
@@ -39,7 +39,7 @@ From an ease of use standpoint, if you sat down at your friends computer, to get
 
 * Download the latest zip release of my project
 * Extract to a folder
-* Double click \workspace\_Build.com
+* Double click \workspace\\_Build.cmd
 * You can now run the Hello demo app: \workspace\src\start\start.exe
 
 It's that simple.
@@ -48,7 +48,7 @@ It's that simple.
 
 Included is all the original files from [go1.4.windows-amd64.zip](http://golang.org/dl/) and [msysGit](https://msysgit.github.io/). No changes have been made to any of the files, just extracted to separate folders.
 
-## Batch scripts
+## Batch Scripts
 
 The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace.
 
@@ -76,10 +76,11 @@ To download packages, write each package on a separate line in \workspace\GetPac
 
 One feature I find really useful is the ability to set uninitialized variables at build time using [ldflags](http://stackoverflow.com/questions/11354518/golang-application-auto-build-versioning) for build version and date.
 
-The BuildDate variable is automatically set in \workspace\__Global.cmd to: YYYYMMDDHHMMSSMM
+The BuildDate variable is automatically set in \workspace\\__Global.cmd to: YYYYMMDDHHMMSSMM
+
 The Version variable is set in: \workspace\BuildVersion.txt
 
-The LDFLAGS variable is set in \workspace\__Global.cmd and then used by the scripts:
+The LDFLAGS variable is set in \workspace\\__Global.cmd and then used by the scripts:
 * _Build.cmd
 * _BuildRaceDetector.cmd
 * _Install.cmd 
