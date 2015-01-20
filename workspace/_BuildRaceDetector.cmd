@@ -12,6 +12,7 @@ SET PACKAGE=%%A
 
 ECHO Building: !PACKAGE!
 cd "%GOPATH%\src\!PACKAGE!"
+DEL /Q /F *.syso
 go build -v -race %LDFLAGS% !PACKAGE!
 ECHO.
 
