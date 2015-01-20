@@ -3,7 +3,7 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Govet ***
+ECHO *** Go Vet ***
 ECHO Vet examines Go source code and reports suspicious constructs
 ECHO.
 

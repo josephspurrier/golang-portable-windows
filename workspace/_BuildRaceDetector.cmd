@@ -3,7 +3,7 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Gobuild ***
+ECHO *** Go Build ***
 ECHO Build compiles packages and dependencies with race condition detector
 ECHO.
 

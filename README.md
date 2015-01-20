@@ -59,10 +59,13 @@ _Build.cmd				- Builds all apps with a main() function in respective directories
 _BuildRaceDetector.cmd	- Same as _Build.cmd, but includes -race flag which detects race conditions (size of .exe is greatly increased, not for Production)
 _Clean.cmd				- Removes object files from package source directories and corresponding binary
 _Document.cmd			- Runs web server and opens a browser to a local version of the documentation for the application
-_Format.cmd				- Formats lines of code correctly
+_Embed.cmd				- Creates a syso file with version information (versioninfo.json) and an icon (icon.ico)
 _Fix.cmd				- Finds lines of code that use old APIs and makes corrections
 _FixDiff.cmd			- Finds lines of code that use old APIs and shows diffs to use newer APIs
-_Get.cmd				- Downloads and installs the packages named by the import paths
+_Format.cmd				- Formats lines of code correctly
+_Generate.cmd			- Runs commands described by directives within existing files
+_Get.cmd				- Downloads the packages named by the import paths
+_GetInstall.cmd			- Downloads and installs the packages named by the import paths
 _Install.cmd			- Installs the packages in the /bin directory (will create automatically)
 _Lint.cmd				- Installs Lint and then prints out style mistakes
 _List.cmd				- Outputs all the packages

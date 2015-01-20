@@ -2,7 +2,8 @@ v1.4.0 (2015-01-19)
 -------------------
 * Updated scripts to use Packages.txt instead of the go list command for faster building
 * Added DiffUtils v2.8.7-1
-* Added _FixDiff.cmd and _Format.cmd
+* Added goversioninfo.exe from https://github.com/josephspurrier/goversioninfo
+* Added _FixDiff.cmd, _Format.cmd, _Generate.cmd, and _GetInstall.cmd
 * Removed gofmt from tests
 
 v1.3.0 (2015-01-16)

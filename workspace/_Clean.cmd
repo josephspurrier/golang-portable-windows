@@ -3,7 +3,7 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Goclean ***
+ECHO *** Go Clean ***
 ECHO Clean removes object files from package source directories
 ECHO.
 

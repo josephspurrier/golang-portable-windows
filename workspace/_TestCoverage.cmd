@@ -3,7 +3,7 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Gotest ***
+ECHO *** Go Test ***
 ECHO Test runs package tests
 ECHO.
 

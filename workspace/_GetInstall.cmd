@@ -4,14 +4,14 @@ Setlocal EnableDelayedExpansion
 CALL __Global.cmd
 
 ECHO *** Go Get ***
-ECHO Get downloads the packages named by the import paths, along with their dependencies.
+ECHO Get downloads and installs the packages named by the import paths, along with their dependencies.
 ECHO.
 
 FOR /F "tokens=*" %%A IN (GetPackages.txt) DO (
 SET PACKAGE=%%A
 
 ECHO Getting: !PACKAGE!
-go get -d !PACKAGE!
+go get !PACKAGE!
 ECHO.
 
 IF !ERRORLEVEL! NEQ 0 PAUSE

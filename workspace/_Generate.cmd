@@ -3,18 +3,18 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Go Test ***
-ECHO Test runs package tests
+ECHO *** Go Generate ***
+ECHO Runs commands described by directives within existing files
 ECHO.
 
 FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
 
-ECHO Testing: !PACKAGE!
+ECHO Building: !PACKAGE!
 cd "%GOPATH%\src\!PACKAGE!"
-go test !PACKAGE! -race -bench=.
+go generate
 ECHO.
 
-)
+IF !ERRORLEVEL! NEQ 0 PAUSE
 
-PAUSE
+)

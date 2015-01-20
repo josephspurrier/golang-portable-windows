@@ -3,7 +3,7 @@ Setlocal EnableDelayedExpansion
 
 CALL __Global.cmd
 
-ECHO *** Goinstall ***
+ECHO *** Go Install ***
 ECHO Installs the packages named by the import paths
 ECHO.
 
