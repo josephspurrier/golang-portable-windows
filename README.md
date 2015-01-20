@@ -46,7 +46,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), and DiffUtils(http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
 
 ## Batch Scripts
 
