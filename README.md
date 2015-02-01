@@ -10,9 +10,9 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.4.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.4.0) (2014-01-19).
+The latest release is [v1.5.0](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.5.0) (2015-02-01).
 
-The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go and Git.
+The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, Git, Mercurial, and Diff.
 
 ## Overview
 
@@ -46,7 +46,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
 
 ## Batch Scripts
 

@@ -1,3 +1,8 @@
+v1.5.0 (2015-02-01)
+-------------------
+* Added EasyMercurial v1.3.0
+* Updated goversioninfo.exe from https://github.com/josephspurrier/goversioninfo
+
 v1.4.0 (2015-01-19)
 -------------------
 * Updated scripts to use Packages.txt instead of the go list command for faster building
