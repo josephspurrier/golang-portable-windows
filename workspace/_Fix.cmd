@@ -8,10 +8,13 @@ ECHO.
 
 FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
+SET FIRSTLETTER=!PACKAGE:~0,1!
 
+IF NOT !FIRSTLETTER!==# (
 ECHO Fixing: !PACKAGE!
 go tool fix "%GOPATH%\src\!PACKAGE!"
 ECHO.
+)
 
 )
 

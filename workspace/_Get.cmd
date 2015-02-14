@@ -9,11 +9,14 @@ ECHO.
 
 FOR /F "tokens=*" %%A IN (GetPackages.txt) DO (
 SET PACKAGE=%%A
+SET FIRSTLETTER=!PACKAGE:~0,1!
 
+IF NOT !FIRSTLETTER!==# (
 ECHO Getting: !PACKAGE!
 go get -d !PACKAGE!
 ECHO.
 
 IF !ERRORLEVEL! NEQ 0 PAUSE
+)
 
 )

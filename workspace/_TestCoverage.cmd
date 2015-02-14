@@ -9,17 +9,14 @@ ECHO.
 
 FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
+SET FIRSTLETTER=!PACKAGE:~0,1!
 
-IF "!FIRST!" == "_" (
-ECHO Skipping: !PACKAGE!
-ECHO.
-) ELSE (
+IF NOT !FIRSTLETTER!==# (
 ECHO Testing: !PACKAGE!
 go test -coverprofile="%GOPATH%\test.tmp" -race -cover !PACKAGE!
 ECHO.
 
 IF EXIST "%GOPATH%\test.tmp" (
-
 ECHO *** Gotool ***
 ECHO Tool generates an html coverage map - web browser with test coverage
 go tool cover -html="%GOPATH%\test.tmp"

@@ -13,12 +13,13 @@ ECHO.
 
 FOR /F "tokens=*" %%A IN (Packages.txt) DO (
 SET PACKAGE=%%A
+SET FIRSTLETTER=!PACKAGE:~0,1!
 
+IF NOT !FIRSTLETTER!==# (
 ECHO Creating SYSO File: !PACKAGE!
 CD "%GOPATH%\src\!PACKAGE!"
 goversioninfo
 ECHO.
-
 )
 
-PAUSE
+)

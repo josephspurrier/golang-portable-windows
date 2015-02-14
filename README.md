@@ -74,6 +74,12 @@ _TestBenchmark.cmd		- Runs all package tests and outputs all benchmarks
 _TestCoverage.cmd		- Same as _Test.cmd, but then opens a web browser to a local version of the code coverage map
 _Vet.cmd				- Examines code and reports suspicious constructs
 ```
+
+## Text Files
+The batch scripts use the .txt files (Packages.txt and GetPackages.txt) to determine which packages are built and tested. There are two rules when using the .txt files:
+* Only one package per line
+* Any lines that start with `#` are ignored
+
 ## How to Use _Get.cmd
 To download packages, write each package on a separate line in \workspace\GetPackages.txt and then run _Get.cmd.
 
