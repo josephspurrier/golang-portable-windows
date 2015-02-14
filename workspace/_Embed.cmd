@@ -18,7 +18,7 @@ SET FIRSTLETTER=!PACKAGE:~0,1!
 IF NOT !FIRSTLETTER!==# (
 ECHO Creating SYSO File: !PACKAGE!
 CD "%GOPATH%\src\!PACKAGE!"
-goversioninfo
+goversioninfo -icon=icon.ico
 ECHO.
 )
 

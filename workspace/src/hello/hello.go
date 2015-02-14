@@ -2,6 +2,8 @@
 // Author: Joseph Spurrier (http://josephspurrier.com)
 // License: http://www.apache.org/licenses/LICENSE-2.0.html
 
+//go:generate goversioninfo -icon=icon.ico
+
 /*
 Package hello does something here.
 

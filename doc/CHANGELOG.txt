@@ -3,6 +3,7 @@ v1.5.1 (2015-02-14)
 * Added the ability to comment out packages in the .txt files
 * Removed dead code from batch scripts
 * Updated boilerplate project name from start to hello
+* Updated boilerplate and _Embed.cmd to include goversioninfo parameters
 
 v1.5.0 (2015-02-01)
 -------------------
