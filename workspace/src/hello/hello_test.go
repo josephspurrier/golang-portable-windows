@@ -1,4 +1,4 @@
-// Copyright 2014 Joseph Spurrier
+// Copyright 2015 Joseph Spurrier
 // Author: Joseph Spurrier (http://josephspurrier.com)
 // License: http://www.apache.org/licenses/LICENSE-2.0.html
 

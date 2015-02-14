@@ -40,7 +40,7 @@ From an ease of use standpoint, if you sat down at your friends computer, to get
 * Download the latest zip release of my project
 * Extract to a folder
 * Double click \workspace\\_Build.cmd
-* You can now run the Hello demo app: \workspace\src\start\start.exe
+* You can now run the Hello app: \workspace\src\hello\hello.exe
 
 It's that simple.
 
@@ -96,8 +96,8 @@ The LDFLAGS variable is set in \workspace\\__Global.cmd and then used by the scr
 * _BuildRaceDetector.cmd
 * _Install.cmd 
 
-All the boilerplate code is already included in \workspace\src\start\start.go.
+All the boilerplate code is already included in \workspace\src\hello\hello.go.
 
 ## Boilerplate Tests
 
-A boilerplate test package is also included at \workspace\src\start\start_test.go.
+A boilerplate test package is also included at \workspace\src\hello\hello_test.go.
