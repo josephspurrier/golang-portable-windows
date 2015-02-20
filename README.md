@@ -3,7 +3,7 @@ golang-portable-windows
 
 Go Programming Language - Portable Environment for Windows
 
-This project is helpful for someone that wants to test Go on Windows within 30 seconds.
+This project is helpful for someone that wants to provision their development environment or just test Go on Windows within 30 seconds.
 
 Very simply: a Go workspace with all the batch scripts needed to format, build, and test Go programs at extract - no install necessary.
 
