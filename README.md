@@ -10,7 +10,7 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest release is [v1.5.1](https://github.com/josephspurrier/golang-portable-windows/releases/tag/1.5.1) (2015-02-14).
+The latest 32-bit and 64-bit release is [v1.6.0](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-11).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, Git, Mercurial, and Diff.
 
@@ -46,17 +46,18 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.1.windows-amd64.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
 
 ## Batch Scripts
 
-The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace.
+The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace. The "go run" command is not used in any of the scripts because it runs from a temporary location that requires you to add a firewall exception each time - instead "go build" is used to build the app and then run normally.
 
 ```
 __Command Prompt.cmd	- Opens a command prompt
 __Global.cmd			- Called by all the scripts to set the environment variables and paths
 _Build.cmd				- Builds all apps with a main() function in respective directories, sets Version and BuildDate inside app
 _BuildRaceDetector.cmd	- Same as _Build.cmd, but includes -race flag which detects race conditions (size of .exe is greatly increased, not for Production)
+_BuildRun.cmd			- Same as _Build.cmd, but runs the app as well
 _Clean.cmd				- Removes object files from package source directories and corresponding binary
 _Document.cmd			- Runs web server and opens a browser to a local version of the documentation for the application
 _Embed.cmd				- Creates a syso file with version information (versioninfo.json) and an icon (icon.ico)
