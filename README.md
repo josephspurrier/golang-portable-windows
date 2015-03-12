@@ -50,7 +50,7 @@ Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.
 
 ## Batch Scripts
 
-The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace. The "go run" command is not used in any of the scripts because it runs from a temporary location that requires you to add a firewall exception each time - instead "go build" is used to build the app and then run normally.
+The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace. The "go run" command is not used in any of the scripts because it runs from a temporary location that requires you to add a firewall exception each time - instead "go build" is used to build the app and then run normally. The only differences between the 32-bit and 64-bit releases are _BuildRaceDetector.cmd is removed in 32-bit and _Test.cmd, _TestBenchmark.cmd, and _TestCoverage.cmd do not have the -race flag in 32-bit. Go 32-bit does not support race detection.
 
 ```
 __Command Prompt.cmd	- Opens a command prompt
