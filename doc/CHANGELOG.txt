@@ -1,4 +1,11 @@
-v1.6.0 (2015-02-11)
+v1.4.2-r.1 (2015-03-13)
+-------------------
+* Updated to msysGit Net Install v1.9.5 (Version Control System) (2014-12-17 Preview)
+* Updated versioning scheme to follow the Go version
+
+-------------------------------------------------------------------------------
+
+v1.6.0 (2015-03-11)
 -------------------
 * Added _BuildRun.cmd
 * Updated to Go v1.4.2 AMD64

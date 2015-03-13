@@ -10,7 +10,7 @@ Very simply: a Go workspace with all the batch scripts needed to format, build, 
 This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
 
 ## Download
-The latest 32-bit and 64-bit release is [v1.6.0](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-11).
+The latest 32-bit and 64-bit release is [v1.4.2-r.1](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-13).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, Git, Mercurial, and Diff.
 
@@ -95,6 +95,7 @@ The Version variable is set in: \workspace\BuildVersion.txt
 The LDFLAGS variable is set in \workspace\\__Global.cmd and then used by the scripts:
 * _Build.cmd
 * _BuildRaceDetector.cmd
+* _BuildRun.cmd
 * _Install.cmd 
 
 All the boilerplate code is already included in \workspace\src\hello\hello.go.
