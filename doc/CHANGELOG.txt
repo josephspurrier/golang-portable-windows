@@ -1,3 +1,8 @@
+v1.4.2-r.2 (2015-03-13)
+-------------------
+* Added LiteIDE X27.1 (IDE)
+* Added LiteIDE batch script and portable configuration
+
 v1.4.2-r.1 (2015-03-13)
 -------------------
 * Updated to msysGit Net Install v1.9.5 (Version Control System) (2014-12-17 Preview)
