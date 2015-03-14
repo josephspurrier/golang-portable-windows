@@ -22,7 +22,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [LiteIDE](https://github.com/visualfc/liteide), msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [LiteIDE](https://github.com/visualfc/liteide), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
 
 # Using LiteIDE
 
