@@ -3,54 +3,34 @@ golang-portable-windows
 
 Go Programming Language - Portable Environment for Windows
 
-This project is helpful for someone that wants to provision their development environment or just test Go on Windows within 30 seconds.
-
-Very simply: a Go workspace with all the batch scripts needed to format, build, and test Go programs at extract - no install necessary.
-
-This distribution is a portable workspace with boilerplate Go code as well as a portable version of the Git command-line client.
+This project allows you to set up a full Go environment in 30 seconds so you can start building Go applications. There is no installation necessary, just extract to your desktop or a portable drive. You can build Go using the included LiteIDE, the easy-to-use batch scripts, or from plain command prompt.
 
 ## Download
-The latest 32-bit and 64-bit release is [v1.4.2-r.1](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-13).
+The latest 32-bit and 64-bit release is [v1.4.2-r.2](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-13).
 
-The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, Git, Mercurial, and Diff.
+The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, LiteIDE, Git, Mercurial, and Diff.
 
 ## Overview
 
-This project is a turnkey solution for building Go program. Personally, I don't like installing programs on Windows, I'd rather run a portable version of software which I why I created this project.
+If you sat down at your friends computer, to get Go up and running:
 
-When I started using Go (without installing), I had to figure out all the environment paths, download a portable version of git, add an environmental flag with git to prevent SSL errors, learn what tools are in Go, and then learn the syntax for each of the tools. It took hours to figure out how to do all of those.
-
-Building a Go program is simple:
-```
-go build {package}
-```
-
-But there are tasks that require much more typing like generating an HTML coverage map and then displaying in your web browser.
-```
-go test -coverprofile="%GOPATH%\test.tmp" -race -cover {package}
-go tool cover -html="%GOPATH%\test.tmp"
-```
-
-If you are typing in go build {package} or even using the arrow keys to find the command in the console history and then pressing Enter, you are wasting time.
-
-Just double click any of the scripts and the correct Go commands will run. Specify your package name (or names, each on a separate line) in Packages.txt and the scripts will build, test, format, clean, fix, or lint all the files in that package.
-
-From an ease of use standpoint, if you sat down at your friends computer, to get Go up and running:
-
-* Download the latest zip release of my project
+* Download the latest zip release
 * Extract to a folder
-* Double click \workspace\\_Build.cmd
-* You can now run the Hello app: \workspace\src\hello\hello.exe
+* Double click LiteIDE.cmd
 
 It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [LiteIDE](https://github.com/visualfc/liteide), msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
 
-## Batch Scripts
+# Using LiteIDE
 
-The scripts in \workspace make it easy to interact with the standard Go tools. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. A few of the scripts use the "go list" command to find all the packages in the workspace. The "go run" command is not used in any of the scripts because it runs from a temporary location that requires you to add a firewall exception each time - instead "go build" is used to build the app and then run normally. The only differences between the 32-bit and 64-bit releases are _BuildRaceDetector.cmd is removed in 32-bit and _Test.cmd, _TestBenchmark.cmd, and _TestCoverage.cmd do not have the -race flag in 32-bit. Go 32-bit does not support race detection.
+Just double click LiteIDE.cmd to start up a portable version of LiteIDE. The GOPATH will automatically be set using a local configuration file. If you move your project to another computer, run LiteIDE.cmd on the new computer to change all the paths inside liteide.ini to the new path. If you want to start from a fresh LiteIDE configuration, just delete \liteide_config\locked.txt and run LiteIDE.cmd.
+
+# Using Batch Scripts
+
+If you don't want to use LiteIDE to build your Go applications, you can use the batch scripts in \workspace. All the scripts call __Global.cmd first to set the environment variables and paths. All the scripts are designed to work with the current file structure so no absolute paths are hard coded which makes the scripts very flexible. The "go run" command is not used in any of the scripts because it runs from a temporary location that requires you to add a firewall exception each time it is run - instead "go build" is used to build the app and then run normally. The only differences between the 32-bit and 64-bit releases are _BuildRaceDetector.cmd is removed in 32-bit and _Test.cmd, _TestBenchmark.cmd, and _TestCoverage.cmd do not have the -race flag in 32-bit. Go 32-bit does not support race detection.
 
 ```
 __Command Prompt.cmd	- Opens a command prompt
