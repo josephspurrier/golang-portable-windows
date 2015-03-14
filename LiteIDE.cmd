@@ -13,7 +13,7 @@ SET ROOTDIR3=%ROOTDIRT:\=\%
 
 IF NOT EXIST liteide_config\locked.txt (
 REM Copy over the system paths
-CALL liteide_config\jrepl.bat "GROOT=" "GROOT=%ROOTDIR3%" /F liteide_config\system%BUILDBIT%.env /O liteide_config\system2.env
+CALL liteide_config\jrepl.bat "WORKROOT=" "WORKROOT=%ROOTDIR3%" /F liteide_config\system%BUILDBIT%.env /O liteide_config\system2.env
 COPY liteide_config\system2.env liteide\share\liteide\liteenv\system.env
 DEL liteide_config\system2.env
 
@@ -51,9 +51,6 @@ IF "!BEGINNING!"=="default_folderList=" (
 )
 )
 
-echo "!ENDING2:~4!"
-echo "%ROOTDIR2:~4%"
-
 REM Replace the last root folder name with the new root folder name in the liteide config
 CALL liteide_config\jrepl.bat "!ENDING!" "%ROOTDIR%" /F liteide\share\liteide\liteapp\config\liteide.ini /O -
 CALL liteide_config\jrepl.bat "!ENDING2!" "%ROOTDIR2%" /F liteide\share\liteide\liteapp\config\liteide.ini /O -
@@ -65,4 +62,3 @@ CALL liteide_config\jrepl.bat "!ENDING2!" "%ROOTDIR3%" /F liteide\share\liteide\
 
 REM Start LiteIDE
 start liteide\bin\liteide.exe
-PAUSE
