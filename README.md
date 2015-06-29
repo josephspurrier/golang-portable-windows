@@ -6,7 +6,7 @@ Go Programming Language - Portable Environment for Windows
 This project allows you to set up a full Go environment in 30 seconds so you can start building Go applications. There is no installation necessary, just extract to your desktop or a portable drive. You can build Go using the included LiteIDE, the easy-to-use batch scripts, or from plain command prompt.
 
 ## Download
-The latest 32-bit and 64-bit release is [v1.4.2-r.3](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-03-19).
+The latest 32-bit and 64-bit release is [v1.4.2-r.4](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-06-28).
 
 The repository does not contain any binaries. Be sure to download the latest release which includes the binaries for Go, LiteIDE, Git, Mercurial, and Diff.
 
@@ -22,7 +22,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [LiteIDE](https://github.com/visualfc/liteide), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders.
+Included is all the original files from [go1.4.2.windows-xxx.zip](http://golang.org/dl/), [LiteIDE](https://github.com/visualfc/liteide), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders. The only exception is msysGit which has these additional files from the full portable install: basename.txt, tr.exe, git-pull, git-sh-i18n, and git-merge.
 
 # Using LiteIDE
 
@@ -47,6 +47,7 @@ _Format.cmd				- Formats lines of code correctly
 _Generate.cmd			- Runs commands described by directives within existing files
 _Get.cmd				- Downloads the packages named by the import paths
 _GetInstall.cmd			- Downloads and installs the packages named by the import paths
+_GetUpdate.cmd			- Downloads and force updates the packages named by the import paths
 _Install.cmd			- Installs the packages in the /bin directory (will create automatically)
 _Lint.cmd				- Installs Lint and then prints out style mistakes
 _List.cmd				- Outputs all the packages

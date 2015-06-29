@@ -1,3 +1,8 @@
+v1.4.2-r.4 (2015-06-28)
+-----------------------
+* Added _GetUpdate.cmd to force updates to existing packages
+* Added to Git to support git pull: basename.txt, tr.exe, git-pull, git-sh-i18n, and git-merge
+
 v1.4.2-r.3 (2015-03-19)
 -----------------------
 * Updated LiteIDE gotools to 2015-02-25
