@@ -22,4 +22,4 @@ SET TIMESTAMP=%DATE%%TIME%
 
 FOR /f "delims=" %%x in (BuildVersion.txt) DO SET VERSION=%%x
 
-SET LDFLAGS=-ldflags "-X main.Version %VERSION% -X main.BuildDate %TIMESTAMP%"
+SET LDFLAGS=-ldflags "-X main.Version=%VERSION% -X main.BuildDate=%TIMESTAMP%"
