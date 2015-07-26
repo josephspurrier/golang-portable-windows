@@ -1,5 +1,3 @@
-Copyright 2015 Joseph Spurrier
-
 This product includes software developed by
 the Joseph Spurrier (http://www.josephspurrier.com).
 
