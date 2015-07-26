@@ -84,3 +84,13 @@ All the boilerplate code is already included in \workspace\src\hello\hello.go.
 ## Boilerplate Tests
 
 A boilerplate test package is also included at \workspace\src\hello\hello_test.go.
+
+## GCC Support
+
+If you import packages into your workspace that need to be compiled (like github.com/mattn/go-sqlite3), you may receive this error message:
+
+```
+exec: "gcc": executable file not found in %PATH%
+```
+
+To install gcc and the other executables, I recommend downloading [Win-builds](http://win-builds.org/) and installing the 32bit version to C:\mingw32 or the 64bit version to C:\mingw64. Win-builds doesn't actually install, it just extracts the necessary files to those directories so it's nice and clean.
