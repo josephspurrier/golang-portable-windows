@@ -6,9 +6,12 @@ Go Programming Language - Portable Environment for Windows
 This project allows you to set up a full Go environment in 30 seconds so you can start building Go applications. There is no installation necessary, just extract to your desktop or a portable drive. You can build Go using the included LiteIDE, the easy-to-use batch scripts, or from plain command prompt.
 
 ## Download
-The latest 32-bit and 64-bit release is [v1.4.2-r.5](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-07-26). Previous releases were split into separate 32-bit and 64-bit downloads. I decided it's easier to maintain a single version which allows you to compile either 32-bit or 64-bit by updating the BUILDBIT.txt file. Simply change the text to either 32 or 64 (default) and both LiteIDE and the batch scripts will build for that architecture.
+The latest 32-bit and 64-bit release is [v1.4.2-r.5](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-07-26). Previous releases were split into separate 32-bit and 64-bit downloads. It's easier to maintain a single version which allows you to compile either 32-bit or 64-bit by updating the BUILDBIT.txt file. Simply change the text to either 32 or 64 (default) and both LiteIDE and the batch scripts will build for that architecture.
 
 The repository does not contain most of the binaries. Be sure to download the latest release which includes the binaries for Go, LiteIDE, Git, Mercurial, and Diff.
+
+## Beta Release
+There is a beta release with Go v1.5beta2. The language itself is in beta so only use it for testing. It's latest release for beta is [v1.5beta2-r.1](https://github.com/josephspurrier/golang-portable-windows/releases) (2015-07-26).
 
 ## Overview
 
