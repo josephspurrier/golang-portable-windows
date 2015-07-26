@@ -3,7 +3,8 @@ Setlocal EnableDelayedExpansion
 
 ECHO Starting up LiteIDE with the correct paths...
 
-SET BUILDBIT=64
+REM Get the BUILDBIT of 32 or 64
+SET /P BUILDBIT=<BUILDBIT.txt
 
 REM Set the root folder, replace slashes with backslashes
 SET ROOTDIRT=%CD%

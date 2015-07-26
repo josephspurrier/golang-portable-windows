@@ -7,8 +7,8 @@ SET GIT=%WORKROOT%\git\bin
 SET GIT_SSL_NO_VERIFY=1
 SET MERCURIAL=%WORKROOT%\mercurial
 SET DIFF=%WORKROOT%\diff\bin
-REG QUERY "HKLM\Hardware\Description\System\CentralProcessor\0" | find /i "x86" > NUL && SET BUILDBIT=32 || SET BUILDBIT=64
-SET PATH=c:\mingw%BUILDBIT%\bin;%GOROOT%\bin;%GOPATH%\bin;%GIT%;%MERCURIAL%;%DIFF%;%PATH%
+SET /P BUILDBIT=<..\BUILDBIT.txt
+SET PATH=c:\mingw%BUILDBIT%\bin;%GOROOT%\bin%BUILDBIT%;%GOPATH%\bin;%GIT%;%MERCURIAL%;%DIFF%;%PATH%
 
 FOR /F "TOKENS=1* DELIMS= " %%A IN ('DATE/T') DO SET CDATE=%%B
 FOR /F "TOKENS=1,2 eol=/ DELIMS=/ " %%A IN ('DATE/T') DO SET mm=%%B

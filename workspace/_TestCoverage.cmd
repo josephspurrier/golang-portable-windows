@@ -13,7 +13,13 @@ SET FIRSTLETTER=!PACKAGE:~0,1!
 
 IF NOT !FIRSTLETTER!==# (
 ECHO Testing: !PACKAGE!
+
+IF %BUILDBIT%==32 (
+go test -coverprofile="%GOPATH%\test.tmp" -cover !PACKAGE!
+) ELSE (
 go test -coverprofile="%GOPATH%\test.tmp" -race -cover !PACKAGE!
+)
+
 ECHO.
 
 IF EXIST "%GOPATH%\test.tmp" (
