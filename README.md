@@ -8,6 +8,9 @@ This project allows you to set up a full Go environment in 30 seconds so you can
 ## Download
 The latest 32-bit and 64-bit release is [v1.5.3-r.1](https://github.com/josephspurrier/golang-portable-windows/releases) (2016-01-17). Previous releases were split into separate 32-bit and 64-bit downloads. It's easier to maintain a single version which allows you to compile either 32-bit or 64-bit by updating the BUILDBIT.txt file. Simply change the text to either 32 or 64 (default) and both LiteIDE and the batch scripts will build for that architecture.
 
+## Beta Release
+There is a beta release with Go v1.6beta2. The language itself is in beta so only use it for testing. It's latest release for beta is [v1.6beta2-r.1](https://github.com/josephspurrier/golang-portable-windows/releases) (2016-01-23).
+
 The repository does not contain most of the binaries. Be sure to download the latest release which includes the binaries for Go, LiteIDE, Git, Mercurial, and Diff.
 
 ## Overview
