@@ -12,6 +12,9 @@ The latest 32-bit and 64-bit release is [v1.6.2-r.2](https://github.com/josephsp
 
 The repository does not contain most of the binaries. Be sure to download the latest release which includes the binaries for Go, LiteIDE, Git, Mercurial, and Diff.
 
+## Beta Download
+There is a release with [Go v1.7beta1](https://github.com/josephspurrier/golang-portable-windows/releases). The language itself is in beta so only use it for testing. (2016-06-03).
+
 ## Overview
 
 If you sat down at your friends computer, to get Go up and running:
