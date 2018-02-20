@@ -24,7 +24,7 @@ It's that simple.
 
 ## Applications
 
-Included is all the original files from [go1.9.4.windows-xxx.zip](http://golang.org/dl/), [LiteIDE X33.2](https://github.com/visualfc/liteide), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders. The only exception is msysGit which has these additional files from the full portable install: basename.txt, tr.exe, git-pull, git-sh-i18n, git-merge, and git-parse-remote.
+Included is all the original files from [go1.10.windows-xxx.zip](http://golang.org/dl/), [LiteIDE X33.2](https://github.com/visualfc/liteide), [msysGit](https://msysgit.github.io/), [EasyMercurial](http://easyhg.org/), and [DiffUtils](http://gnuwin32.sourceforge.net/packages/diffutils.htm). No changes have been made to any of the files, just extracted to separate folders. The only exception is msysGit which has these additional files from the full portable install: basename.txt, tr.exe, git-pull, git-sh-i18n, git-merge, and git-parse-remote.
 
 # Using LiteIDE
 
